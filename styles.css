@@ -1,0 +1,137 @@
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background-color: #007bff;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+header img {
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
+}
+
+nav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links li {
+  position: relative;
+  display: inline-block;
+}
+
+nav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #333;
+  padding: 10px;
+  border-radius: 0 0 5px 5px;
+}
+
+.nav-links li:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  display: block;
+  color: #f2f2f2;
+  text-decoration: none;
+  padding: 8px 16px;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.about-us-box,
+.software-box,
+.subheading {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #555;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Responsive Media Queries */
+@media screen and (max-width: 600px) {
+  .nav-links li {
+    display: block;
+    width: 100%;
+  }
+
+  .nav-links li:hover .dropdown-content {
+    display: block;
+    position: static;
+  }
+
+  .dropdown-content {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+#about,
+#software,
+#monitoring {
+  text-align: center;
+  margin-top: 50px;
+}
+
+#about h2,
+#software h2,
+#monitoring h2 {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
