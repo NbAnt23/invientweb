@@ -7,16 +7,31 @@ body {
 }
 
 header {
-  background-color: #007bff;
+  background-color: #b1b4b8;
   padding: 20px;
-  text-align: center;
   color: #fff;
+  display: flex;
+  align-items: center;
 }
 
 header img {
-  width: 50px;
+  width: 100px;
   height: auto;
   margin-right: 10px;
+}
+
+header h1 {
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid white;
+  animation: typing 4s steps(20, end);
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
 }
 
 nav {
@@ -33,6 +48,7 @@ nav {
 .nav-links li {
   position: relative;
   display: inline-block;
+  z-index: 1;
 }
 
 nav a {
@@ -58,6 +74,7 @@ nav a:hover {
   background-color: #333;
   padding: 10px;
   border-radius: 0 0 5px 5px;
+  z-index: 2;
 }
 
 .nav-links li:hover .dropdown-content {
@@ -78,7 +95,9 @@ nav a:hover {
 
 .about-us-box,
 .software-box,
-.subheading {
+.subheading,
+.monitoring-box,
+.support-box {
   background-color: #fff;
   padding: 20px;
   border-radius: 10px;
@@ -107,27 +126,109 @@ footer {
     width: 100%;
   }
 
-  .nav-links li:hover .dropdown-content {
+  .dropdown-content {
     display: block;
-    position: static;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 0 0 5px 5px;
   }
 
-  .dropdown-content {
-    width: 100%;
-    box-sizing: border-box;
+  .nav-links li:not(:hover) .dropdown-content {
+    display: none;
   }
 }
 
 #about,
 #software,
-#monitoring {
+#monitoring,
+#support,
+#executives {
   text-align: center;
   margin-top: 50px;
 }
 
 #about h2,
 #software h2,
+#monitoring h2,
+#support h2,
+#executives h2 {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.subheading {
+  background-color: #007bff;
+  color: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.subheading h3 {
+  margin: 0;
+}
+
+#monitoring h2,
+#monitoring h3,
+#monitoring p {
+  margin-bottom: 15px;
+}
+
+#monitoring .monitoring-box {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+#monitoring .monitoring-box p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #555;
+}
+
+#monitoring .monitoring-box h3 {
+  margin: 0;
+}
+
+#monitoring {
+  text-align: center;
+  margin-top: 50px;
+}
+
 #monitoring h2 {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+#support {
+  text-align: center;
+  margin-top: 50px;
+}
+
+#support h2 {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+#executives h2 {
   display: inline-block;
   background-color: #333;
   color: #fff;
