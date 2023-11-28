@@ -12,23 +12,28 @@
 <body>
     <header>
         <img src="logo_home.gif" alt="Company Logo">
-        <h1>Invient</h1>
+        <h1 id="typing-text"></h1>
     </header>
 
-    <nav>
-        <ul class="nav-links">
-            <li class="dropdown">
-                <a href="#">About Us</a>
-                <div class="dropdown-content">
-                    <a href="#about">Overview</a>
-                    <a href="#executives">Executives</a>
-                </div>
-            </li>
-            <li><a href="#software">Software</a></li>
-            <li><a href="#support">Support</a></li>
-            <li><a href="#monitoring">Data Monitoring</a></li>
-        </ul>
-    </nav>
+
+<nav>
+    <ul class="nav-links">
+        <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                aria-expanded="false">About Us<span class="caret"></span></a>
+            <div class="dropdown-content">
+                <a href="#about">Overview</a>
+                <a href="#executives">Executives</a>
+            </div>
+        </li>
+
+        </li>
+        <li><a href="#software">Software</a></li>
+        <li><a href="#support">Support</a></li>
+        <li><a href="#monitoring">Data Monitoring</a></li>
+    </ul>
+</nav>
+
 
     <section id="about">
         <h2>About Us</h2>
@@ -83,32 +88,37 @@
 
     <section id="support">
         <h2>Support</h2>
-        <p>Insert your support content here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at justo nec
-            purus porttitor aliquet.</p>
+    
+        <div class="support-box">
+            <p>Online support is available to customers with an Invient Care subscription.</p>
+        </div>
     </section>
 
     <section id="monitoring">
         <h2>Data Monitoring</h2>
-
+    
         <div class="subheading">
             <h3>Invient Data Monitoring Reduces back-office costs and eases staffing concerns.</h3>
         </div>
-
-        <p>Invient Data Monitoring is an outsourced service that frees up private equity LPs from the recurring burden
-            of
-            collecting and recording details about the funds they invest in.</p>
-
-        <p>When you outsource to us, we extract details from GP quarterly reports, daily transactions, and our own
-            research
-            channels. We then record them in the database system of your choice*.</p>
-
-        <p>Our analysts work from our office and remotely enter data into computers located in your office, allowing you
-            to
-            have total control of the database.</p>
-
-        <p>We are accurate, responsive, and cost-effective. Our clients typically experience a 75% drop in their
-            data-monitoring costs by outsourcing to us. They also eliminate the staffing issues created by fluctuating
-            workloads.</p>
+    
+        <div class="monitoring-box">
+            <p>Invient Data Monitoring is an outsourced service that frees up private equity LPs from the recurring burden
+                of
+                collecting and recording details about the funds they invest in.</p>
+    
+            <p>When you outsource to us, we extract details from GP quarterly reports, daily transactions, and our own
+                research
+                channels. We then record them in the database system of your choice*.</p>
+    
+            <p>Our analysts work from our office and remotely enter data into computers located in your office, allowing
+                you
+                to
+                have total control of the database.</p>
+    
+            <p>We are accurate, responsive, and cost-effective. Our clients typically experience a 75% drop in their
+                data-monitoring costs by outsourcing to us. They also eliminate the staffing issues created by fluctuating
+                workloads.</p>
+        </div>
     </section>
 
 
@@ -118,7 +128,7 @@
     </section>
 
     <footer>
-        <p>&copy; 2023 Your Company Name. All rights reserved.</p>
+        <p>&copy; 2023 Invient. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>
