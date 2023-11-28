@@ -28,3 +28,4 @@ function typeText(index) {
 
 // Start typing animation
 typeText(0);
+
