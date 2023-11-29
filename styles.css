@@ -4,6 +4,9 @@ body {
   padding: 0;
   background-color: #f4f4f4;
   color: #333;
+  background-image: url("ss.png"); /* Replace with your watermark image path or URL */
+  background-repeat: no-repeat;
+  background-size: cover; /* Ensures the background image covers the entire background */
 }
 
 header {
@@ -11,7 +14,7 @@ header {
   padding: 20px;
   color: #fff;
   display: flex;
-  align-items: center;
+  align-items: center; /* Add this line to remove default margin */
 }
 
 header img {
@@ -104,6 +107,7 @@ nav a:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin: 20px auto;
   max-width: 800px;
+  text-align: left;
 }
 
 .about-us-box p,
@@ -193,6 +197,7 @@ footer {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin: 20px auto;
   max-width: 800px;
+  text-align: left; /* Align paragraphs to the left */
 }
 
 #monitoring .monitoring-box p {
@@ -241,4 +246,11 @@ footer {
   padding: 10px 20px;
   border-radius: 5px;
   margin-bottom: 20px;
+}
+
+#funds-heading {
+  color: #007bff;
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
 }
