@@ -10,9 +10,10 @@ body {
 }
 
 header {
-  background-color: #b1b4b8;
+  background-color: #8aacd8;
   padding: 20px;
-  color: #fff;
+  font: 1.2em "Fira Sans", sans-serif;
+  color: rgb(24, 9, 9);
   display: flex;
   align-items: center; /* Add this line to remove default margin */
 }
@@ -254,3 +255,32 @@ footer {
   margin-bottom: 20px;
   text-align: center;
 }
+
+/* Add styles for the home section */
+#home {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 800px;
+  text-align: center;
+}
+
+#home h2 {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+#home p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #555;
+  text-align: left;
+}
+
+/* Additional styles for the Team section if needed */
